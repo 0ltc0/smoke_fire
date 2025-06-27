@@ -68,10 +68,10 @@ names: ['fire', 'smoke']  # 类别名称
 ### 2. 开始训练
 ```bash
 # 基础训练
-python train.py --data fire_smoke/data.yaml --weights yolo-facev2s-preweight.pt --epochs 150 --batch-size 16
+python train.py --data fire_smoke/data.yaml --weights yolo-facev2s-preweight.pt  --cfg models/yolov5s_v2_RFEM_MultiSEAM.yaml --epochs 150 --batch-size 16
 
 # 使用GPU训练（推荐）
-python train.py --data fire_smoke/data.yaml --weights yolo-facev2s-preweight.pt --epochs 150 --batch-size 16 --device 0
+python train.py --data fire_smoke/data.yaml --weights yolo-facev2s-preweight.pt  --cfg models/yolov5s_v2_RFEM_MultiSEAM.yaml --epochs 150 --batch-size 16 --device 0
 
 # 自定义参数训练
 python train.py \
